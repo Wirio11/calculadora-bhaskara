@@ -77,3 +77,20 @@ main{
 .receberValor{
     font-size: 22px;
 }
+@media(max-width: 600px) {
+    p {
+        font-size: 18px;
+        margin: 12px 0 6px;
+    }
+    .input {
+        width: 120px;
+        height: 40px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .btt {
+        font-size: 18px;
+        padding: 12px 20px;
+        min-height: 44px;
+    }
+}
