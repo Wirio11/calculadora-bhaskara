@@ -93,5 +93,6 @@ main{
         font-size: 18px;
         padding: 12px 20px;
         min-height: 44px;
+        margin: 5px 0 0 0;
     }
 }
