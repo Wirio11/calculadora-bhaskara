@@ -57,6 +57,7 @@ main{
     border:solid #000016 2px;
     background-color: white;
     margin: 1% auto;
+    max-width: 700px;
     border-radius: 20px;
 }
 .fracao {
