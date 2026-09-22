@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8">
+        <title>Calculadora Delta</title>
+        <link rel="stylesheet" href="css/style.css">
+        <h1 class="h1">Calculadora Delta e Bhaskara</h1>
+        <script type="text/javascript" src="js/delta.js"></script>
+    </head>
+    <body>
+        <main>
+            <form action="">
+                <div class="ddd">
+                    <p class="receberValor" id="p1">
+                        Informe o valor de A:  <input class="input" 
+                        type="text" id="a"></p>
+                    <p class="receberValor" id="p2">
+                        Informe o valor de B: <input class="input" 
+                        tpe="text" id="b"></p>
+                    <p class="receberValor" id="p3">
+                        Informe o valor de C: <input class="input" 
+                        type="text" id="c"><br></p>
+                </div>
+                <div id="sumir">
+                    <input class="btt" type="button" value="Calcular" 
+                    onclick="chamarDelta()">
+      
+                    <h1 id="dt"></h1>
+                    <h1 id="mostrarDelta"></h1><br>
+                </div>
+                <div>
+                    <input type="button" id="meuBotao1" 
+                    onclick="bhaskara()" hidden>
+                    <button id="meuBotao2" hidden></button>
+                </div>
+
+                <h1 id="opcao"></h1>
+                
+                <div>
+                    <input type="button" id="botaospf" 
+                    onclick="spf()" hidden></button>
+                    <input type="button" id="botaoN" 
+                    onclick="decimal()" hidden>
+                </div>
+                <div>
+                    <h1 id="formula1"></h1>
+                    <h1 id="formula2"></h1>
+                </div>
+                <div>
+                    <h1 id="deltainteiro1"></h1>
+                    <h1 id="deltainteiro2"></h1>
+                </div>
+                <h1 id="rx1"></h1>
+                <h1 id="rx2"></h1>
+        </form>
+        </main>
+    </body>
+</html>
