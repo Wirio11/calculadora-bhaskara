@@ -13,14 +13,14 @@
             <form action="">
                 <div class="ddd">
                     <p class="receberValor" id="p1">
-                        Informe o valor de A:  <input class="input" 
-                        type="text" id="a"></p>
+                        Informe o valor de A:  <input class="input" type="number"
+                        id="a" onkeydown="if (event.key === 'e' || event.key === 'E') { event.preventDefault(); }"></p>
                     <p class="receberValor" id="p2">
-                        Informe o valor de B: <input class="input" 
-                        tpe="text" id="b"></p>
+                        Informe o valor de B: <input class="input" type="number"
+                        id="b" onkeydown="if (event.key === 'e' || event.key === 'E') { event.preventDefault(); }"></p>
                     <p class="receberValor" id="p3">
-                        Informe o valor de C: <input class="input" 
-                        type="text" id="c"><br></p>
+                        Informe o valor de C: <input class="input" type="number"
+                        id="c" onkeydown="if (event.key === 'e' || event.key === 'E') { event.preventDefault(); }"><br></p>
                 </div>
                 <div id="sumir">
                     <input class="btt" type="button" value="Calcular" 
