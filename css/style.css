@@ -95,16 +95,15 @@ footer{
     padding: 5px;
     text-align: center;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    border-sizing: border-box;
+    box-sizing: border-box;
 }
 @media(max-width: 600px) {
     body {
-        margin: 5% 0 0 0;
+        margin: 10% 0 0 0;
     }
     main p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        text-align: center;
+        margin: 20px 0 8px;
     }
     p {
         font-size: 18px;
@@ -115,11 +114,13 @@ footer{
         height: 40px;
         font-size: 18px;
         text-align: center;
+        display: block;
+        margin: 0 auto;
     }
     .btt {
         font-size: 18px;
         padding: 12px 20px;
         min-height: 44px;
-        margin: 5px 0 0 0;
+        margin: 10px 0 0 0;
     }
 }
