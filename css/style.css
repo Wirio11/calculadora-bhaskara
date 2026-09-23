@@ -1,6 +1,9 @@
 body{
     background-color: #44556f;
+    min-height: 100vh;
     margin: 5%;
+    display: flex;
+    flex-direction: column;
     color: #000016;
 }
 h1{
@@ -77,6 +80,17 @@ main{
 }
 .receberValor{
     font-size: 22px;
+}
+footer{
+    margin: auto auto 0;
+    width: 100%;
+    
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    border-sizing: border-box;
 }
 @media(max-width: 600px) {
     body {
