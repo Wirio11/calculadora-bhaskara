@@ -105,15 +105,15 @@ function bhaskara(){
             mdcFinal = ab
             numerador1SPF = numerador1 / mdcFinal
             denominadorSPF = denominador / mdcFinal
-
+            let result1 = numerador1 / denominador
             document.getElementById('deltainteiro1')
             .innerHTML = `
                 x1 = 
                 <span class="fracao">
                     <span class="span1">${denominadorSPF < 0 ? -1 * numerador1SPF : numerador1SPF}</span>
                     <span>${denominadorSPF  < 0 ? -1 * denominadorSPF : denominadorSPF}</span>
-                </span>
-
+                </span><br>
+                ${'Ou => '} x1 = ${Number(result1.toFixed(3))}
             `
         }
         if(numerador2 % denominador == 0){
@@ -133,16 +133,16 @@ function bhaskara(){
             mdcFinal = ab2
             numerador2SPF = numerador2 / mdcFinal
             denominadorSPF = denominador / mdcFinal
-            
+            let result2 = numerador2 / denominador
                 document.getElementById('deltainteiro2')
                 .innerHTML = `
                 x2 = 
                 <span class="fracao">
                     <span class="span1">${denominadorSPF < 0 ? -1 * numerador2SPF : numerador2SPF }</span>
                     <span>${denominadorSPF < 0 ? -1 * denominadorSPF : denominadorSPF}</span>
-                </span>
-
-            `  
+                </span><br>
+                ${'Ou => '}  x2 = ${Number(result2.toFixed(3))}
+            ` 
         }
 
     } else{
@@ -163,13 +163,15 @@ function bhaskara(){
             mdcFinal = ab2
             numerador2SPF = numerador1 / mdcFinal
             denominadorSPF = denominador / mdcFinal
+            let result3 = numerador1 / denominador
             document.getElementById('deltainteiro1')
                 .innerHTML = `
                 x1 = 
                 <span class="fracao">
                     <span class="span1">${denominadorSPF < 0 ? -1 * numerador2SPF : numerador2SPF }</span>
                     <span>${denominadorSPF < 0 ? -1 * denominadorSPF : denominadorSPF}</span>
-                </span>
+                </span><br>
+                ${'Ou => '}  x1 = ${Number(result3.toFixed(3))}
             `
         }
     }
@@ -185,9 +187,9 @@ function decimal(){
         let x2 = (-(vb) - raizQ) / (2 * va)
 
         document.getElementById('rx1')
-        .innerHTML = "x1 = " + x1
+        .innerHTML = "x1 = " + Number(x1.toFixed(3))
         document.getElementById('rx2')
-        .innerHTML = "x2 = " + x2
+        .innerHTML = "x2 = " + Number(x2.toFixed(3))
     }
 }
 
@@ -208,11 +210,12 @@ function spf(){
         fora = 1
         dentro = delta
 
-        for(let i =  Math.floor(Math.sqrt(delta)); i >=2; i--)
+        for(let i =  Math.floor(Math.sqrt(delta)); i >=2; i--){
             if(delta % (i*i) === 0){
                 fora = i
                 dentro = delta / (i*i)
                 break;
+            }
         }
         console.log( fora + '√' + dentro)
 
