@@ -1,7 +1,7 @@
 body{
     background-color: #44556f;
     min-height: 100vh;
-    margin: 5%;
+    margin: 5% 0 0 0;
     display: flex;
     flex-direction: column;
     color: #000016;
@@ -11,7 +11,7 @@ h1{
     border: 2px;
 }
 main{
-    margin: auto;
+    margin: 3px auto auto auto;
     width: 90%;
     max-width: 700px;
     box-sizing: border-box;
@@ -84,8 +84,7 @@ main{
 footer{
     margin: auto auto 0;
     width: 100%;
-    
-    background-color: gray;
+    background-color: black;
     color: white;
     padding: 5px;
     text-align: center;
